@@ -5,7 +5,7 @@ Home: http://urwid.org/
 
 Package license: GNU Library or Lesser General Public License (LGPL) v2.1
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A full-featured console (xterm et al.) user interface library
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/urwid-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/urwid-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/urwid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/urwid-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/urwid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/urwid-feedstock/branch/master)
