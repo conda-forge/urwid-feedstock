@@ -33,7 +33,6 @@ conda search urwid --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
