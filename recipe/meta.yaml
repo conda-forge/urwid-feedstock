@@ -10,7 +10,7 @@ source:
   md5: 2e1a005cb31368fe21bfeba2d6ad5a5c
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
