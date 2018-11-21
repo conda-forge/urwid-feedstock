@@ -3,7 +3,7 @@ About urwid
 
 Home: http://urwid.org/
 
-Package license: GNU Library or Lesser General Public License (LGPL) v2.1
+Package license: LGPL-2.1
 
 Feedstock license: BSD 3-Clause
 
