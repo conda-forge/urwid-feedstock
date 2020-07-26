@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: urwid
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/u/urwid/urwid-{{ version }}.tar.gz
-  sha256: 0896f36060beb6bf3801cb554303fef336a79661401797551ba106d23ab4cd86
+  sha256: 7870866e35b00b71b0c9ccdd1281c8e7fac3806d60b9c1075c95dd5dad88d526
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   build:
@@ -31,7 +31,7 @@ about:
   home: http://urwid.org/
   license: LGPL-2.1
   license_file: COPYING
-  summary: 'A full-featured console (xterm et al.) user interface library'
+  summary: A full-featured console (xterm et al.) user interface library
 
 extra:
   recipe-maintainers:
