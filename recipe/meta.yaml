@@ -28,8 +28,9 @@ test:
 
 about:
   home: http://urwid.org/
-  license: LGPL-2.1
+  license: LGPL-2.1-or-later
   license_file: COPYING
+  license_family: LGPL
   summary: A full-featured console (xterm et al.) user interface library
 
 extra:
