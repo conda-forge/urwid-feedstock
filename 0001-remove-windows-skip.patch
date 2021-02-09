@@ -1,0 +1,25 @@
+From c7d84603a49c8510a86c4e1380aa64554a695bfe Mon Sep 17 00:00:00 2001
+From: Stephen L Arnold <nerdboy@gentoo.org>
+Date: Tue, 9 Feb 2021 10:30:49 -0800
+Subject: [PATCH] remove windows skip
+
+Signed-off-by: Stephen L Arnold <nerdboy@gentoo.org>
+---
+ recipe/meta.yaml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/recipe/meta.yaml b/recipe/meta.yaml
+index c2b32f4..454f2c4 100644
+--- a/recipe/meta.yaml
++++ b/recipe/meta.yaml
+@@ -10,7 +10,6 @@ source:
+ 
+ build:
+   number: 2
+-  skip: true  # [win]
+   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+ 
+ requirements:
+-- 
+2.30.0
+
