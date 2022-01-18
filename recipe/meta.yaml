@@ -9,11 +9,13 @@ source:
   sha256: 588bee9c1cb208d0906a9f73c613d2bd32c3ed3702012f51efe318a3f2127eae
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
@@ -27,14 +29,17 @@ test:
     - urwid.tests
 
 about:
-  home: http://urwid.org/
+  home: https://urwid.org/
   license: LGPL-2.1-or-later
   license_file: COPYING
   license_family: LGPL
   summary: A full-featured console (xterm et al.) user interface library
+  dev_url: https://github.com/urwid/urwid
+  doc_url: https://urwid.org/tutorial/index.html
 
 extra:
   recipe-maintainers:
     - scopatz
     - asmeurer
     - ocefpaf
+    - matthiasdiener
