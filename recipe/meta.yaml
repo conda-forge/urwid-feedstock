@@ -26,7 +26,6 @@ requirements:
 test:
   imports:
     - urwid
-    - urwid.tests
 
 about:
   home: https://urwid.org/
