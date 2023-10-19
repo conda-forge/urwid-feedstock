@@ -30,7 +30,7 @@ requirements:
 test:
   imports:
     - urwid
- commands:
+  commands:
     - pip check
   requires:
     - pip
