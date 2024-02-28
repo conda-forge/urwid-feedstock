@@ -1,4 +1,4 @@
-{% set version = "2.6.5" %}
+{% set version = "2.6.7" %}
 
 package:
   name: urwid
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/u/urwid/urwid-{{ version }}.tar.gz
-  sha256: 8475c867e19c00e8ed99b0a8a635b409c03d82f79b762f67419e3cbfa723ed7d
+  sha256: 597fa2d19ac788e4607d2a48aca32f257342201cb55e5f6a00a8fcd24e62a5ab
 
 build:
   number: 0
