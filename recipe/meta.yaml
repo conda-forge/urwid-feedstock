@@ -10,7 +10,6 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
@@ -22,11 +21,10 @@ requirements:
   host:
     - python
     - pip
-    - importlib_metadata
+    - importlib-metadata
     - setuptools >=61
     - setuptools_scm >=6.2
   run:
-    - typing_extensions
     - wcwidth
     - typing-extensions
     - python
