@@ -1,0 +1,51 @@
+schema_version: 1
+
+context:
+  version: "4.0.3"
+
+package:
+  name: urwid
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/u/urwid/urwid-${{ version }}.tar.gz
+  sha256: 0f9a1d9b51a529f04c363d04c53dc446dada47a9eab641a82244ff9d1fe5029b
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=80.8.0
+    - setuptools-scm >=8.1.0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - wcwidth >=0.4
+    - typing_extensions
+
+tests:
+  - python:
+      imports:
+        - urwid
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: A full-featured console (xterm et al.) user interface library
+  license: LGPL-2.1-only
+  license_file: COPYING
+  homepage: https://urwid.org/
+  documentation: https://urwid.org/manual/index.html
+
+extra:
+  recipe-maintainers:
+    - asmeurer
+    - matthiasdiener
+    - ocefpaf
+    - scopatz
