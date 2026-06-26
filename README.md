@@ -5,13 +5,11 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/urwid-feedstock
 
 Home: https://urwid.org/
 
-Package license: LGPL-2.1-or-later
+Package license: LGPL-2.1-only
 
 Summary: A full-featured console (xterm et al.) user interface library
 
-Development: https://github.com/urwid/urwid
-
-Documentation: https://urwid.org/tutorial/index.html
+Documentation: https://urwid.org/manual/index.html
 
 Current build status
 ====================
