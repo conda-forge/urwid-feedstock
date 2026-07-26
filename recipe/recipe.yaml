@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.0.7"
+  version: "4.0.8"
 
 package:
   name: urwid
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/u/urwid/urwid-${{ version }}.tar.gz
-  sha256: c31aff787741428028b20bac3b0774fbe4f10de00ae00fe07722244d09462248
+  sha256: 3cea5748b936a223c9045bcee46dc1a0ec4cbce4a09bd7594974212207b737d4
 
 build:
   number: 0
